@@ -1,4 +1,5 @@
 import { Star } from "lucide-react"
+import Image from "next/image"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Progress } from "@/components/ui/progress"
 import { Button } from "@/components/ui/button"
@@ -107,4 +108,3 @@ export function ReviewSection() {
     </div>
   )
 }
-

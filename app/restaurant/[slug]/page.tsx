@@ -132,7 +132,7 @@ export default function RestaurantProfile() {
                   </p>
                   <h3 className="mt-6 text-lg font-semibold">Location & Hours</h3>
                   <p className="text-muted-foreground">
-                    Located in the heart of Dhanmondi, we're easily accessible and offer both dine-in and takeaway
+                    Located in the heart of Dhanmondi, we&apos;re easily accessible and offer both dine-in and takeaway
                     services. Open daily from 10 AM to 10 PM.
                   </p>
                 </div>

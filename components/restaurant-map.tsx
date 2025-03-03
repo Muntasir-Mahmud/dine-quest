@@ -6,7 +6,7 @@ interface RestaurantMapProps {
   address: string
 }
 
-export function RestaurantMap({ address }: RestaurantMapProps) {
+export function RestaurantMap({ }: RestaurantMapProps) {
   const mapRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -23,12 +23,13 @@ export function RestaurantMap({ address }: RestaurantMapProps) {
     }
 
     return () => {
-      if (mapRef.current) {
-        mapRef.current.innerHTML = ""
+      // Store a reference to the current value
+      const currentMapRef = mapRef.current
+      if (currentMapRef) {
+        currentMapRef.innerHTML = ""
       }
     }
-  }, [])
+  }, []) // Refs don't need to be in the dependency array
 
   return <div className="h-[300px] w-full overflow-hidden rounded-lg" ref={mapRef} />
 }
-
