@@ -152,3 +152,5 @@ export default function RestaurantProfile() {
     </div>
   )
 }
+
+export const runtime = "edge";

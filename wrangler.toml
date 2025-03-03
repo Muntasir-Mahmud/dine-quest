@@ -1,7 +1,5 @@
 name = "dine-quest"
 compatibility_date = "2025-03-03"
 compatibility_flags = ["nodejs_compat"]
-main = ".worker-next/index.mjs"
-assets = { directory = ".worker-next/assets/", binding = "ASSETS" }
 
-
+pages_build_output_dir = ".vercel/output/static"
