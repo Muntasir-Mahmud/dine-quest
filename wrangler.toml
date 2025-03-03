@@ -4,7 +4,4 @@ compatibility_flags = ["nodejs_compat"]
 main = ".worker-next/index.mjs"
 assets = { directory = ".worker-next/assets/", binding = "ASSETS" }
 
-[build]
-command = "bun run build"
-
 

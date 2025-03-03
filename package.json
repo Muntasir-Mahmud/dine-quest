@@ -10,7 +10,7 @@
     "deploy": "wrangler deploy",
     "build:worker": "cloudflare",
     "dev:worker": "wrangler dev --port 8787",
-    "deploy:worker": "bun run build:worker && wrangler deploy"
+    "deploy:worker": "npm run build:worker && wrangler deploy"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.3",
